@@ -1,0 +1,51 @@
+body{
+    font-family: 'Trebuchet MS',Helvetica;
+    color: #111;
+}
+h1{
+   text-align: center;
+   font-size: 2em; 
+}
+.cialo{
+    margin-left: 350px;
+    margin-right: 20px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+
+}
+.menu{
+    position: fixed;
+    top:10px;
+    width: 300px;
+}
+
+
+li{
+    list-style-type: none;
+    border-bottom: 1px dotted gray;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+a:hover{
+    background: #ccc
+}
+.stopka{
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 0.75em;
+}
+p{
+    font-style: italic;
+    margin-left: 80px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman';
+    color: #483d8b;
+}
+img{
+    margin: 10px 10px 10px 80px;
+    padding: 10px 10px 10px 0px;
+    float: left;
+}

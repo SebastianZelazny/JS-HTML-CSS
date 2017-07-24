@@ -1,0 +1,41 @@
+body{
+  /*  background-color: pink; */
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.menu{
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 150px;
+}
+
+html{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.stopka{
+    font-size: 80%;
+}
+
+.cialo{
+    margin-left: 150px;
+    width: 600px;
+}
+
+h1{
+    border-bottom: 2px solid red;   
+}
+h2{
+    border-bottom: 2px solid red;   
+}
+a{
+    padding: 40px;
+    color:black;
+    text-decoration: none;   
+}
+a:hover{
+    background: white;
+    color: black;
+}

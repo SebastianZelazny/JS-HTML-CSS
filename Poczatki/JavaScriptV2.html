@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script type="text/javascript">
+        { 
+            var tab = ['a','b','c','d','e','f','g']
+            var numer=prompt("Podaj numer tablicy")
+            function podaj(numer)
+            {
+                if(parseInt(numer) < 0)
+                {
+                    document.write("Podałes za maly numer")
+                }
+                else if(parseInt(numer > tab.length))
+                {
+                    document.write("Podałes za duzy numer")
+                }
+                else
+                {
+                    document.write(tab[parseInt(numer) -1 ])
+                }
+            }
+            podaj(numer);
+             document.write("<br>")
+            var zolw = {
+                imie: 'Leonard',
+                wiek: 90,
+                mow:function()
+                {
+                    return 'aaaaaaaa'
+                }
+            }
+            document.write(zolw.imie +"<br>")
+            document.write(zolw.wiek +"<br>")
+            document.write(zolw.mow() +"<br>")
+        
+            var samochod = {
+                marka: 'Mazda',
+                model: '6',
+                uruchom:function(){
+                    return 'uwaga Uruchamiam'
+                },
+                jedz:function(){
+                    return 'uwaga Jadeeeeee'
+                },
+                zatrzymaj:function(){
+                    return 'Zatrzymuje sie :('
+                }
+            }
+
+            document.write(samochod.marka+"<br>")
+            document.write(samochod.model+"<br>")
+            document.write(samochod.uruchom()+"<br>")
+            document.write(samochod.jedz()+"<br>")
+            document.write(samochod.zatrzymaj()+"<br>")
+       
+            function samocchod(marka,model,imie)
+            {
+                this.marka = marka;
+                this.model = model;
+                this.imie = imie;
+                this.odglos=function()
+                {
+                    return 'Brum bum bum'
+                }
+                this.info=function()
+                {
+                    return "Cześć jestem "+this.imie+" Mam samochodzik Marki "+this.marka+" Modelu "+this.model+" i robi "+this.odglos()+""
+                }
+            }
+            var ob1 = new samocchod("Mazda","6","Asia")
+            document.write(ob1.info())
+           /*document.write(ob1.odglos())*/ 
+        }
+
+        </script>
+    </body>
+</html>

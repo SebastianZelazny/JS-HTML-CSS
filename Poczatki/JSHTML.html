@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>JS Nowe</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            var day;
+            day=prompt("Podaj cyfre od 1 do 7")
+            switch(parseInt(day))
+            {
+                case 1:
+                alert("Poniedziałek");
+                break
+                case 2:
+                alert("Wtorek");
+                break
+                case 3:
+                alert("Sroda");
+                break
+                case 4:
+                alert("Czwartek");
+                break
+                case 5:
+                alert("Piatek");
+                break
+                case 6:
+                alert("Sobota");
+                break
+                case 7:
+                alert("Niedziela");
+                break
+                default:
+                alert("Nie ma takiego dnia")
+            }
+
+            for(var i = 1; i<11; i++)
+            {
+              document.writeln("&nbsp")  
+              for(var j=1; j<i; j++)
+              {
+                document.writeln("&nbsp*")
+              }
+              document.writeln("</br>")
+            }
+
+        </script>
+        <script>
+            
+        </script>
+
+       
+
+    </body>
+</html>

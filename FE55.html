@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	
+		<style>
+		img{
+		border: solid;
+		position: static;
+		padding: -2px;
+		}
+		</style>
+	</head>
+    <body>
+		<!--
+		$(document).ready(function);
+		$(selector).focus(function);
+		$(selector).blur(function);
+		$(selector).mouseenter(function);
+		$(selector).mouseleave(function);
+		$(selector).mouseover(function);
+		$(selector).mousedown(function);
+		$(selector).mouseup(function);
+		$(selector).click(function);
+		$(selector).dblclick(function);
+		$(selector).attr(attribute);
+		$(selector).attr(attribute,value); 
+		$(selector).hide(speed,callback);
+		$(selector).show(speed,callback);
+		$(selector).slideDown(speed,callback);
+		$(selector).slideUp(speed,callback);
+		$(selector).slideToggle(speed,callback);
+		$(selector).fadeIn(speed,callback);
+		$(selector).fadeOut(speed,callback);
+		$(selector).fadeToggle(speed,callback);		
+		-->
+		<input type="text" id ="input1">Imie i Nazwisko</input><br/><br/><br/>
+		<a href = "google.pl" id="google">Google</a><br/><br/><br/>
+		<p id="najedz"> Najedz na mnie!!!</p>
+		<a id="dubleclick"> Kliknij dwarazy</a>
+		<img src="kolko.jpg" id="zdj">
+		<p id="klikacz1">Klikaj<p>
+		<p id="klikacz2">Klikaj jeszzcze<p>
+		
+		<button id="ok">OK</button>
+		<button id="nok">NOK</button>
+		<button id="nokok">NOK-OK</button>
+		
+		<script>
+		
+		$(document).ready(
+		function()
+			{
+				$("img").click( 
+				
+					function changeImg(){
+						
+						$(this).fadeIn(1000, function(){
+						if($(this).attr("src") == "kolko.jpg"){
+							$(this).attr("src", "pusty.jpg");
+						}
+						else{
+							$(this).attr("src", "kolko.jpg");
+						}});	
+					}
+				);
+				
+				$("#input1").focus(function(){ $(this).css({'background-color' : '#DFD8D1'}); });
+				$("#input1").blur(function(){ $(this).css({'background-color' : '#ffffff'}); });
+				$("#google").mouseenter(function(){alert("NIE KLIKAJ TEGO!!!!!");});
+				$("#najedz").mouseover(function(){ $(this).css({'background-color' : '#CC0066'}); });
+				$("img").mousedown(function(){ $(this).fadeOut(3000);});
+				$("#najedz").mouseleave( function(){ $(this).css({'background-color' : '#ffffff'});});
+				$("#dubleclick").dblclick(function(){ alert("nacisneles dwa razy!!!")});
+				$("#klikacz1").click(function(){$(this).slideUp();});
+				$("#klikacz2").click(function(){$("#klikacz1").slideDown();});
+				$("#ok").click(function(){ $("#zdj").show() })
+				$("#nok").click(function(){ $("#zdj").hide() })
+				$("#nokok").click(function(){ $("#zdj").slideToggle() })
+				
+			}
+		);		
+		</script>
+    </body>
+</html>
